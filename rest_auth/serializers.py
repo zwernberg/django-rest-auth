@@ -126,8 +126,8 @@ class UserDetailsSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = UserModel
-        fields = ('username', 'email', 'first_name', 'last_name')
-        read_only_fields = ('email', )
+        fields = ('username', 'email', 'first_name', 'last_name', 'id')
+        read_only_fields = ('email', 'id')
 
 
 class PasswordResetSerializer(serializers.Serializer):
